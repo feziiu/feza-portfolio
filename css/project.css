@@ -1,0 +1,51 @@
+/* Learn Isle / project detail page — extends style.css */
+
+.project-hero{
+  padding: 140px 6vw 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.project-hero .tag{
+  color: var(--navy);
+  background: var(--lime);
+  font-weight: 800;
+  letter-spacing: .06em;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+}
+.project-hero h1{
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  color: var(--blue);
+  margin: 10px 0 18px;
+}
+.project-hero p{
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2a2a44;
+  max-width: 700px;
+}
+
+.project-images{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.project-images img{
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.project-footer{
+  text-align: center;
+  padding: 50px 6vw 100px;
+}
+.back-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto 30px;
+  font-weight: 800;
+  color: var(--blue);
+}
