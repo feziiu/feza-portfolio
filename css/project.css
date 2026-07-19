@@ -5,7 +5,12 @@
   max-width: 900px;
   margin: 0 auto;
 }
+.project-hero .back-link{
+  display: flex;
+  margin-bottom: 14px;
+}
 .project-hero .tag{
+  display: inline-block;
   color: var(--navy);
   background: var(--lime);
   font-weight: 800;
@@ -13,6 +18,7 @@
   font-size: 13px;
   text-transform: uppercase;
   padding: 4px 10px;
+  margin-bottom: 10px;
 }
 .project-hero h1{
   font-size: clamp(30px, 4vw, 46px);
