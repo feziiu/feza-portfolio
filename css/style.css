@@ -10,11 +10,12 @@ button, input, textarea { font-family: inherit; }
 
 /* ===== Vars ===== */
 :root{
-  --blue: #123BA3;
-  --navy: #050b1e;
-  --navy-deep: #01050b;
+  --electric-blue: #0009FF;
+  --txt-blue: #0E2768;
+  --navy: #020A1C;
+  --navy-deep: #020A1C;
   --bg: #f9fbff;
-  --lavender: #b7bcff;
+  --lavender: #9B9EFF;
   --lime: #BFFB34;
   --ink: #0a0a1a;
   --white: #ffffff;
@@ -95,7 +96,7 @@ body{
 .nav a{
   font-size: 14px;
   font-weight: 700;
-  color: var(--blue);
+  color: var(--txt-blue);
   opacity: .85;
   transition: opacity .2s ease;
 }
@@ -109,7 +110,7 @@ body{
   align-items: center;
   padding: 120px 6vw 80px;
   background:
-    radial-gradient(circle at 4% -4%, var(--lavender) 0%, rgba(183,188,255,0) 45%),
+    radial-gradient(circle at 4% -4%, var(--lavender) 0%, rgba(155,158,255,0) 45%),
     var(--bg);
 }
 .hero-inner{
@@ -125,7 +126,7 @@ body{
   font-size: clamp(26px, 3.2vw, 40px);
   font-weight: 500;
   line-height: 1.35;
-  color: var(--blue);
+  color: var(--txt-blue);
   max-width: 560px;
 }
 .hero-text h1 strong{ font-weight: 800; }
@@ -180,7 +181,7 @@ body{
 
 /* ===== Works ===== */
 .works{
-  background: linear-gradient(180deg, #041027 0%, var(--navy-deep) 100%);
+  background: var(--navy-deep);
   padding: 90px 6vw 100px;
 }
 .works-inner{ max-width: 1200px; margin: 0 auto; }
@@ -292,11 +293,11 @@ body{
 .about-text p{
   font-size: 16px;
   line-height: 1.7;
-  color: #2a2a44;
+  color: var(--txt-blue);
   margin-bottom: 20px;
 }
 .about-text .highlight{
-  color: var(--blue);
+  color: var(--txt-blue);
   font-weight: 800;
 }
 
@@ -307,6 +308,14 @@ body{
 }
 .contact-inner{ max-width: 1200px; margin: 0 auto; text-align: center; }
 .contact .section-title{ color: var(--white); text-align: left; }
+.contact-intro{
+  text-align: left;
+  max-width: 480px;
+  color: #8b93b8;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 14px;
+}
 
 .contact-buttons{
   display: flex;
@@ -328,14 +337,14 @@ body{
 .social-btn:hover{ transform: translateY(-3px); box-shadow: 0 10px 20px rgba(191,251,52,.25); }
 
 .contact-star{
-  width: 44px;
-  margin: 26px auto;
+  width: 64px;
+  margin: 28px auto;
   animation: cursor-spin 8s linear infinite;
 }
 
 .email-btn{
   display: inline-block;
-  background: var(--blue);
+  background: var(--electric-blue);
   color: var(--white);
   font-weight: 800;
   font-size: 14px;
