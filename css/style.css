@@ -284,9 +284,9 @@ body{
   z-index: 2;
 }
 .about-star{
-  width: 110px;
-  left: -18px;
-  bottom: 24%;
+  width: 125px;
+  left: 40%;
+  bottom: 30%;
   transform: rotate(-8deg);
   z-index: 3;
 }
