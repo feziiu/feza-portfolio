@@ -38,4 +38,33 @@
   document.addEventListener('mouseout', function (e) {
     if (e.target.closest(hoverTargets)) cursor.classList.remove('grow');
   });
+
+  // Click feedback: cursor flashes lime + a small star-dust burst
+  var clickTimeout;
+  document.addEventListener('mousedown', function (e) {
+    cursor.classList.add('clicked');
+    clearTimeout(clickTimeout);
+    clickTimeout = setTimeout(function () {
+      cursor.classList.remove('clicked');
+    }, 260);
+    spawnBurst(e.clientX, e.clientY);
+  });
+
+  function spawnBurst(x, y) {
+    var count = 7;
+    for (var i = 0; i < count; i++) {
+      var particle = document.createElement('div');
+      particle.className = 'click-particle';
+      var angle = (Math.PI * 2 * i) / count + Math.random() * 0.4;
+      var dist = 26 + Math.random() * 18;
+      particle.style.setProperty('--px', Math.cos(angle) * dist + 'px');
+      particle.style.setProperty('--py', Math.sin(angle) * dist + 'px');
+      particle.style.left = x + 'px';
+      particle.style.top = y + 'px';
+      document.body.appendChild(particle);
+      particle.addEventListener('animationend', function () {
+        this.remove();
+      });
+    }
+  }
 })();
