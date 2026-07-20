@@ -288,7 +288,7 @@ body{
   left: -18px;
   bottom: 24%;
   transform: rotate(-8deg);
-  z-index: 0;
+  z-index: 3;
 }
 .about-text p{
   font-size: 16px;
@@ -310,7 +310,8 @@ body{
 .contact .section-title{ color: var(--white); text-align: left; }
 .contact-intro{
   text-align: left;
-  max-width: 480px;
+  max-width: none;
+  white-space: nowrap;
   color: #8b93b8;
   font-size: 15px;
   line-height: 1.6;
@@ -378,4 +379,5 @@ body{
 @media (max-width: 520px){
   .nav{ gap: 16px; padding: 8px 16px; right: 12px; top: 12px; }
   .nav a{ font-size: 12px; }
+  .contact-intro{ white-space: normal; }
 }
