@@ -284,10 +284,10 @@ body{
   z-index: 2;
 }
 .about-star{
-  width: 125px;
-  left: 40%;
-  bottom: 30%;
-  transform: rotate(-8deg);
+  width: 100px;
+  left: -24px;
+  bottom: 90px;
+  animation: cursor-spin 9s linear infinite;
   z-index: 3;
 }
 .about-text p{
