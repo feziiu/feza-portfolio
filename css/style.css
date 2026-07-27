@@ -123,7 +123,7 @@ body{
   width: 100%;
 }
 .hero-text h1{
-  font-size: clamp(26px, 3.2vw, 40px);
+  font-size: clamp(29px, 3.6vw, 46px);
   font-weight: 500;
   line-height: 1.35;
   color: var(--txt-blue);
@@ -284,9 +284,9 @@ body{
   z-index: 2;
 }
 .about-star{
-  width: 100px;
-  left: -24px;
-  bottom: 90px;
+  width: 140px;
+  left: 34%;
+  bottom: 26%;
   animation: cursor-spin 9s linear infinite;
   z-index: 3;
 }

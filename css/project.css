@@ -43,6 +43,29 @@
   border-radius: var(--radius);
 }
 
+.artwork-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px;
+  max-width: 900px;
+  margin: 10px auto 0;
+}
+.artwork-item img{
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+.artwork-item .artwork-name{
+  margin-top: 12px;
+  font-weight: 800;
+  color: var(--txt-blue);
+  font-size: 15px;
+  text-align: center;
+}
+@media (min-width: 700px){
+  .artwork-grid{ grid-template-columns: repeat(3, 1fr); }
+}
+
 .project-footer{
   text-align: center;
   padding: 50px 6vw 100px;
