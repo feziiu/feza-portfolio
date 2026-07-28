@@ -46,8 +46,8 @@
 .artwork-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px 30px;
-  max-width: 900px;
+  gap: 50px 40px;
+  max-width: 1080px;
   margin: 10px auto 0;
 }
 .artwork-item img{
@@ -59,11 +59,28 @@
   margin-top: 12px;
   font-weight: 800;
   color: var(--txt-blue);
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
 }
-@media (min-width: 700px){
-  .artwork-grid{ grid-template-columns: repeat(3, 1fr); }
+
+.drawing-list{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 900px;
+  margin: 10px auto 0;
+}
+.drawing-list .artwork-item img{
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+.drawing-list .artwork-item .artwork-name{
+  margin-top: 14px;
+  font-weight: 800;
+  color: var(--txt-blue);
+  font-size: 17px;
+  text-align: left;
 }
 
 .project-footer{
