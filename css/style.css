@@ -238,10 +238,10 @@ body{
 .card:hover .meta p{ color: var(--lime); }
 
 @media (min-width: 700px){
-  .c-learnisle, .c-feel{ grid-column: span 6; }
+  .c-learnisle, .c-tebli{ grid-column: span 6; }
   .c-cafesade1, .c-wizardcook, .c-stellartrack{ grid-column: span 4; }
   .c-covers, .c-echoo{ grid-column: span 6; }
-  .c-drawings, .c-tebli, .c-cafesade2{ grid-column: span 4; }
+  .c-drawings, .c-feel, .c-cafesade2{ grid-column: span 4; }
 }
 
 /* ===== About ===== */
