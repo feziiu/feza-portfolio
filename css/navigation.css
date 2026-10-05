@@ -8,3 +8,6 @@
 section[id]{scroll-margin-top:85px}
 @media(max-width:520px){.nav,.landing .nav{top:12px;right:10px;max-width:calc(100% - 20px);gap:12px;padding:8px 12px}.nav a,.landing .nav a{font-size:12px;line-height:20px}.language-switch{padding-left:7px;gap:0}.language-switch button{padding:4px 5px;font-size:11px}}
 @media(max-width:360px){.nav,.landing .nav{gap:8px;padding:8px}.language-switch{padding-left:4px}}
+
+/* Homepage navigation scales with the landing page only. */
+.landing .nav{zoom:.75}
