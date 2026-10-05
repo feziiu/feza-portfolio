@@ -10,4 +10,4 @@ section[id]{scroll-margin-top:85px}
 @media(max-width:360px){.nav,.landing .nav{gap:8px;padding:8px}.language-switch{padding-left:4px}}
 
 /* Homepage navigation scales with the landing page only. */
-.landing .nav{zoom:.75}
+.landing .nav{zoom:.9}
