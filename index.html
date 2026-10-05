@@ -6,8 +6,10 @@
 <title>Feza - I design everything</title>
 <link rel="icon" href="assets/img/star.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/navigation.css">
 </head>
-<body>
+<body class="landing">
 
 <div id="cursor-star">
   <div class="star-spin">
@@ -17,27 +19,25 @@
 </div>
 
 <nav class="nav">
-  <a href="#home">Home</a>
-  <a href="#works">Work</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+  <a href="#home" data-i18n="text0">Home</a>
+  <a href="#works" data-i18n="text1">Work</a>
+  <a href="#about" data-i18n="text2">About</a>
+  <a href="#contact" data-i18n="text3">Contact</a>
+<div class="language-switch" role="group" aria-label="Language / Dil"><button type="button" data-language="en" aria-pressed="true" lang="en">EN</button><button type="button" data-language="tr" aria-pressed="false" lang="tr">TR</button></div>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="home">
+  <img class="hero-glow" src="assets/img/redesign/glow.svg" alt="">
   <div class="hero-inner">
     <div class="hero-text">
-      <h1>
-        <strong>I'm Feza,</strong> a multidisciplinary designer based in Istanbul.
-        I design brands, interfaces, and experiences.
-        <strong>I design everything.</strong>
-      </h1>
+      <h1><strong data-i18n="heroStart">I'm Feza,</strong> <span data-i18n="heroBody">a multidisciplinary designer based in Istanbul. I design brands, interfaces, and experiences.</span> <strong class="hero-ending" data-i18n="heroEnd">I design everything.</strong></h1>
     </div>
     <div class="hero-photo-wrap">
       <div class="hero-photo">
-        <img src="assets/img/hero-photo.jpg" alt="Feza">
+        <img src="assets/img/redesign/hero.png" alt="Feza">
       </div>
-      <img class="hero-star" src="assets/img/star.svg" alt="">
+      <img class="hero-star" src="assets/img/redesign/hero-star.svg" alt="">
     </div>
   </div>
 </section>
@@ -45,119 +45,62 @@
 <!-- MARQUEE -->
 <div class="marquee">
   <div class="marquee-track">
-    <span class="m-item">UI/UX Design</span><span class="m-sep">✦</span>
-    <span class="m-item">Branding</span><span class="m-sep">✦</span>
-    <span class="m-item">Game Design</span><span class="m-sep">✦</span>
-    <span class="m-item">Visual Identity</span><span class="m-sep">✦</span>
-    <span class="m-item">Social Media</span><span class="m-sep">✦</span>
-    <span class="m-item">Product Design</span><span class="m-sep">✦</span>
+    <span class="m-item" data-i18n="text4">UI/UX Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text5">Branding</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text6">Game Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text7">Visual Identity</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text8">Social Media</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text9">Product Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
 
-    <span class="m-item">UI/UX Design</span><span class="m-sep">✦</span>
-    <span class="m-item">Branding</span><span class="m-sep">✦</span>
-    <span class="m-item">Game Design</span><span class="m-sep">✦</span>
-    <span class="m-item">Visual Identity</span><span class="m-sep">✦</span>
-    <span class="m-item">Social Media</span><span class="m-sep">✦</span>
-    <span class="m-item">Product Design</span><span class="m-sep">✦</span>
+    <span class="m-item" data-i18n="text10">UI/UX Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text11">Branding</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text12">Game Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text13">Visual Identity</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text14">Social Media</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text15">Product Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
 
-    <span class="m-item">UI/UX Design</span><span class="m-sep">✦</span>
-    <span class="m-item">Branding</span><span class="m-sep">✦</span>
-    <span class="m-item">Game Design</span><span class="m-sep">✦</span>
-    <span class="m-item">Visual Identity</span><span class="m-sep">✦</span>
-    <span class="m-item">Social Media</span><span class="m-sep">✦</span>
-    <span class="m-item">Product Design</span><span class="m-sep">✦</span>
+    <span class="m-item" data-i18n="text16">UI/UX Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text17">Branding</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text18">Game Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text19">Visual Identity</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text20">Social Media</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text21">Product Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
 
-    <span class="m-item">UI/UX Design</span><span class="m-sep">✦</span>
-    <span class="m-item">Branding</span><span class="m-sep">✦</span>
-    <span class="m-item">Game Design</span><span class="m-sep">✦</span>
-    <span class="m-item">Visual Identity</span><span class="m-sep">✦</span>
-    <span class="m-item">Social Media</span><span class="m-sep">✦</span>
-    <span class="m-item">Product Design</span><span class="m-sep">✦</span>
+    <span class="m-item" data-i18n="text22">UI/UX Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text23">Branding</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text24">Game Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text25">Visual Identity</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text26">Social Media</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
+    <span class="m-item" data-i18n="text27">Product Design</span><span class="m-sep"><img src="assets/img/redesign/slider-star.svg" alt=""></span>
   </div>
 </div>
 
 <!-- WORKS -->
-<section class="works" id="works">
-  <div class="works-inner">
-    <h2 class="section-title">Works</h2>
-    <div class="grid">
-
-      <a href="learn-isle.html" class="card c-learnisle">
-        <div class="thumb"><img src="assets/img/work-learnisle.png" alt="Learn Isle"></div>
-        <div class="meta"><h3>Learn Isle</h3><p>Game Project</p></div>
-      </a>
-
-      <a href="tebli.html" class="card c-tebli">
-        <div class="thumb"><img src="assets/img/tebli-cover.jpg" alt="Tebli"></div>
-        <div class="meta"><h3>Tebli</h3><p>Website Design</p></div>
-      </a>
-
-      <a href="cafe-sade.html" class="card c-cafesade1">
-        <div class="thumb"><img src="assets/img/cafesade-cover.jpg" alt="Cafe Sade"></div>
-        <div class="meta"><h3>Cafe Sade</h3><p>UI/UX Project</p></div>
-      </a>
-
-      <a href="wizardcook.html" class="card c-wizardcook">
-        <div class="thumb"><img src="assets/img/wizardcook-cover.jpg" alt="Wizardcook"></div>
-        <div class="meta"><h3>Wizardcook</h3><p>UI/UX Project</p></div>
-      </a>
-
-      <a href="stellar-track.html" class="card c-stellartrack">
-        <div class="thumb"><img src="assets/img/stellartrack-cover.jpg" alt="Stellar Track"></div>
-        <div class="meta"><h3>Stellar Track</h3><p>UI Design</p></div>
-      </a>
-
-      <a href="covers.html" class="card c-covers">
-        <div class="thumb"><img src="assets/img/covers-detail-4.jpg" alt="Covers"></div>
-        <div class="meta"><h3>Covers</h3><p>Music Covers</p></div>
-      </a>
-
-      <a href="echoo.html" class="card c-echoo">
-        <div class="thumb"><img src="assets/img/echoo-detail-1.jpg" alt="Echoo"></div>
-        <div class="meta"><h3>Echoo</h3><p>UI Art Project</p></div>
-      </a>
-
-      <a href="drawings.html" class="card c-drawings">
-        <div class="thumb"><img src="assets/img/drawings/liman.jpg" alt="Drawings"></div>
-        <div class="meta"><h3>Drawings</h3><p>Game Design</p></div>
-      </a>
-
-      <a href="feel.html" class="card c-feel">
-        <div class="thumb"><img src="assets/img/feel-detail-2.jpg" alt="FeeL"></div>
-        <div class="meta"><h3>FeeL</h3><p>Poster Project</p></div>
-      </a>
-
-      <a href="artworks.html" class="card c-cafesade2">
-        <div class="thumb"><img src="assets/img/artworks/basari.jpg" alt="Artworks"></div>
-        <div class="meta"><h3>Artworks</h3><p>Personal Artworks</p></div>
-      </a>
-
-    </div>
-  </div>
-</section>
+<section class="works" id="works"><div class="works-inner"><h2 class="section-title" data-i18n="text28">WORKS</h2><section class="work-group"><h3 data-i18n="text29">Digital Product</h3><div class="project-grid "><a href="lettuce.html" class="card cover-lettuce"><div class="thumb"><img src="assets/img/redesign/lettuce.png" alt="Lettuce" loading="lazy"></div><div class="meta"><h4>Lettuce</h4><p data-i18n="text30">Mobile App</p></div></a><a href="learn-isle.html" class="card cover-learn-isle"><div class="thumb"><img src="assets/img/redesign/learn-isle.png" alt="Learn Isle" loading="lazy"></div><div class="meta"><h4>Learn Isle</h4><p data-i18n="text31">Mobile Game</p></div></a><a href="tebli.html" class="card cover-tebli"><div class="thumb"><img src="assets/img/redesign/tebli.png" alt="Tebli" loading="lazy"></div><div class="meta"><h4>Tebli</h4><p data-i18n="text32">Website Design</p></div></a><a href="cafe-sade.html" class="card cover-cafe-sade"><div class="thumb"><img src="assets/img/redesign/cafe-sade.png" alt="Cafe Sade" loading="lazy"></div><div class="meta"><h4>Cafe Sade</h4><p>UI/UX</p></div></a><a href="wizardcook.html" class="card cover-wizardcook"><div class="thumb"><img src="assets/img/redesign/wizardcook.png" alt="Wizardcook" loading="lazy"></div><div class="meta"><h4>Wizardcook</h4><p>UI/UX</p></div></a><a href="echoo.html" class="card cover-echoo"><div class="thumb"><img src="assets/img/redesign/echoo.png" alt="Echoo" loading="lazy"></div><div class="meta"><h4>Echoo</h4><p data-i18n="text33">UI Art</p></div></a></div></section><section class="work-group"><h3 data-i18n="text34">Game &amp; Interactive</h3><div class="project-grid pair"><a href="character-design.html" class="card cover-character"><div class="thumb"><img src="assets/img/redesign/character.png" alt="Character Design" loading="lazy"></div><div class="meta"><h4 data-i18n="text35">Character Design</h4><p data-i18n="text36">Game Project</p></div></a><a href="drawings.html" class="card cover-drawings"><div class="thumb"><img src="assets/img/redesign/drawings.png" alt="Game Scenes" loading="lazy"></div><div class="meta"><h4 data-i18n="text37">Game Scenes</h4><p data-i18n="text38">Game Project</p></div></a></div></section><section class="work-group"><h3 data-i18n="text39">Experimental</h3><div class="project-grid "><a href="artworks.html" class="card cover-thoughts"><div class="thumb"><img src="assets/img/redesign/thoughts.png" alt="Thoughts" loading="lazy"></div><div class="meta"><h4>Thoughts</h4><p data-i18n="text40">Art Project</p></div></a><a href="color-combos.html" class="card cover-color-combos"><div class="thumb"><img src="assets/img/redesign/color-combos.png" alt="Color Combos" loading="lazy"></div><div class="meta"><h4>Color Combos</h4><p data-i18n="text41">Poster Project</p></div></a><a href="feel.html" class="card cover-feel"><div class="thumb"><img src="assets/img/redesign/feel.png" alt="fEEL" loading="lazy"></div><div class="meta"><h4>fEEL</h4><p data-i18n="text42">Poster Project</p></div></a></div></section></div></section>
 
 <!-- ABOUT -->
 <section class="about" id="about">
+<h2 class="section-title" data-i18n="text43">ABOUT ME</h2>
   <div class="about-inner">
     <div class="about-photos">
-      <img class="about-star" src="assets/img/about-star.svg" alt="">
-      <img class="about-photo-1" src="assets/img/about-1.jpg" alt="Feza">
-      <img class="about-photo-2" src="assets/img/about-2.jpg" alt="Feza">
+      <img class="about-star" src="assets/img/redesign/about-star.svg" alt="">
+      <div class="about-photo-1"><img src="assets/img/redesign/about-back.png" alt="Feza"></div>
+      <img class="about-photo-2" src="assets/img/redesign/about-front.png" alt="Feza">
     </div>
     <div class="about-text">
-      <h2 class="section-title" style="color:var(--txt-blue)">About Me</h2>
-      <p>
-        I'm Feza. I'm actually an electrical-electronics engineer. But art has always been my
+      <p data-i18n="text44">
+        I'm Feza.</p><p data-i18n="text45">I'm actually an electrical-electronics engineer. But art has always been my
         biggest passion. While I was still studying engineering, I taught myself digital design,
         and since that day, I haven't stopped designing, experimenting, and creating. I work
         across a wide range: from brand identities to UI/UX, from game design to user
         experience, from illustration to digital products.
       </p>
-      <p>
+      <p data-i18n="text46">
         I've worked on many different projects, collaborated with different teams, taught design
         at university, and merged my technical background with creativity. Yes, I'm an
         engineer-designer. Yes, my story is a bit unusual, but it comes down to passion.
       </p>
-      <p class="highlight">In short: I design everything.</p>
+      <p class="highlight" data-i18n="text47">In short: I design everything.</p>
     </div>
   </div>
 </section>
@@ -165,26 +108,24 @@
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="contact-inner">
-    <h2 class="section-title">Contact</h2>
-    <p class="contact-intro">Let's design something together. Reach out, I'd love to hear about your project.</p>
+    <h2 class="section-title" data-i18n="text48">CONTACT</h2>
+    <p class="contact-intro" data-i18n="text49">Let's design something together. Reach out, I'd love to hear about your project.</p>
 
     <div class="contact-buttons">
-      <a class="social-btn" href="https://www.instagram.com/feza.arts?igsh=anIxam52amlkN2hy" target="_blank" rel="noopener">Instagram</a>
-      <a class="social-btn" href="https://www.linkedin.com/in/feza-yucal" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="social-btn" href="https://www.behance.net/fezayucal1" target="_blank" rel="noopener">Behance</a>
-    </div>
+<a class="social-btn" href="https://www.linkedin.com/in/feza-yucal" target="_blank" rel="noopener">LinkedIn</a>
+<a class="social-btn" href="https://www.behance.net/fezayucal1" target="_blank" rel="noopener">Behance</a>
+<a class="social-btn" href="https://www.instagram.com/feza.arts?igsh=anIxam52amlkN2hy" target="_blank" rel="noopener">Instagram</a>
+</div>
 
-    <img class="contact-star" src="assets/img/contact-star.svg" alt="">
+    <img class="contact-star" src="assets/img/redesign/contact-star.svg" alt="">
 
-    <a class="email-btn" href="mailto:fezayucal@gmail.com">Email Me</a>
+    <a class="email-btn" href="mailto:fezayucal@gmail.com" data-i18n="text50">Email Me</a>
 
-    <div class="site-footer">
-      <span>© 2026 Feza Yucal</span>
-      <span>Designed &amp; built by Feza</span>
-    </div>
+
   </div>
 </section>
 
+<script src="js/i18n.js"></script>
 <script src="js/cursor.js"></script>
 </body>
 </html>

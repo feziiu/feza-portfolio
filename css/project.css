@@ -95,3 +95,7 @@
   font-weight: 800;
   color: var(--txt-blue);
 }
+
+.project-images img,.artwork-item img{height:auto;}
+.project-images,.artwork-grid,.drawing-list{width:calc(100% - 40px);}
+@media(max-width:600px){.artwork-grid{gap:28px 16px}.project-hero{padding-top:110px}}
