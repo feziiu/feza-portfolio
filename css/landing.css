@@ -21,7 +21,7 @@
 .landing .works-inner{max-width:1080px}
 .landing .section-title,.work-group>h3{font-size:54px;font-weight:800;line-height:64.8px;letter-spacing:0;text-align:center;color:var(--txt-blue);font-variation-settings:'opsz' 96;margin:0 0 36px}
 .work-group+ .work-group{margin-top:36px}
-.work-group>h3{margin-bottom:18px}
+.work-group>h3{font-size:36px;line-height:1.2;margin-bottom:18px}
 .project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,324px));gap:18px 10.8px;justify-content:center}
 .project-grid.pair{grid-template-columns:repeat(2,minmax(0,324px));gap:9px}
 .landing .card{grid-column:auto;overflow:visible;min-width:0}
@@ -37,7 +37,7 @@
 .work-group:first-of-type .card .meta p{font-size:12.6px;line-height:15.3px}
 .landing .card:hover .meta{color:var(--electric-blue)}
 .landing .card:hover .meta p{color:var(--electric-blue)}
-.landing .about{padding:72px max(21.6px,calc((100% - 1080px)/2));background-color:var(--bg);background-image:radial-gradient(#0e276812 0.585px,transparent 0.585px);background-size:18px 18px}
+.landing .about{padding:72px max(21.6px,calc((100% - 1080px)/2));background-color:var(--bg);background-image:radial-gradient(circle,rgba(14,39,104,.22) 1px,transparent 1.2px);background-size:18px 18px}
 .landing .about>.section-title{margin-bottom:18px}
 .landing .about-inner{grid-template-columns:458.1px 1fr;gap:36px;align-items:center}
 .landing .about-photos{height:452.16px;min-height:0;margin:0}
@@ -89,3 +89,10 @@ a:focus-visible{outline:2.7px solid var(--electric-blue);outline-offset:4.5px}
 .landing .contact-star{width:122.4px;height:157.5px}
 .landing .hero-glow{width:954.9px;height:967.5px}
 .landing .m-sep img{width:32.25px;height:41.4375px}
+
+/* The marquee closes the opening viewport and separates it from Works. */
+.landing .hero{height:auto;min-height:calc(100svh - 54px);padding-top:72px;padding-bottom:24px}
+@media(max-width:800px){
+  .landing .hero{min-height:calc(100svh - 45px);padding-top:72px;padding-bottom:24px}
+  .landing .work-group>h3{font-size:clamp(18px,3.6vw,28.8px);line-height:1.2}
+}
